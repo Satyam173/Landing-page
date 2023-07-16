@@ -3,47 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Leader Board</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
-        </nav>
-
-        <form action="#" class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button type="submit"><i class='bx bx-search'></i></button>
-        </form>
-    </header>
-
-    <div class="container">
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <h2><a href="#" class="logo">LOGO</a></h2>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Form</a>
+                <a href="#">Leader Board</a>
+                <a href="#">About</a>
+                <a href="#">Contact US</a>
+            </div>
+            <label for="check">
+                <i class='bx bx-menu menu-btn' ></i>
+                <i class='bx bxs-x-circle close-btn' ></i>
+            </label>
+        </header>
         <div class="content">
-            <h2 class="logo"><i class='bx bx-low-vision' ></i>Webeye</h2>
-
-            <div class="text-sci"><h2>
-                <br>Welcome!<br><span>To Our New Website.</span> </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum.</p>
-                <div class="social-icons">
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#"><i class='bx bxl-github' ></i></a>
-                </div>
+            <div class="info">
+                <h2>Like Web <br><span>Be Creative!</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at? Veniam facilis exercitationem rerum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, ipsum eum eaque asperiores quod ut ab quas itaque porro officiis? Dolore voluptatibus tempora labore, explicabo recusandae maiores ex quia necessitatibus, facere eum nostrum laboriosam consequatur perferendis accusamus laborum soluta deleniti!</p>
+                <a href="#" class="info-btn">Explore</a>
             </div>
         </div>
-
-        <div class="logreg-box">
-            <div class="form-box login">
-                <form action="#">
-                    <h2>Sign In</h2>
-                </form>
-            </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
         </div>
-    </div>
+    </section>
 </body>
 </html>

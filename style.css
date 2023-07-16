@@ -5,155 +5,212 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Delicious Handrawn', cursive;
-    font-family: 'Poppins', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 25px 12.5%;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-body{
-    background: #020410;
-}
-.navbar a{
+section{
     position: relative;
-    font-size: 16px;
-    color: #e4e4e4;
-    text-decoration: none;
-    font-weight: 500;
-    margin-right: 30px;
-}
-.navbar a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
     width: 100%;
-    height: 2px;
-    background: #e4e4e4;
-    border-radius: 5px;
-    transform: translateY(10px);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.navbar a:hover::after{
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.search-bar{
-    width: 250px;
-    height: 45px;
-    background: transparent;
-    border: 2px solid #e4e4e4;
-    border-radius: 6px;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: #e4e4e4;
-    padding-left: 10px;
-}
-
-.search-bar input::placeholder{
-    color: #e4e4e4;
-}
-
-.search-bar button{
-    width: 40px;
-    height: 100%;
-    background: transparent;
-    display: flex;
-    border: none;
-    outline: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    /* margin-left: 100%;*/
-}
-.search-bar button i{
-    font-size: 22px;
-    color: #e4e4e4;
-}
-
-.container{
-    position: absolute;
-    width: 87%;
-    height: 550px;
-    background: url(background.jpg) no-repeat;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(jefferson-santos-9SoCnyQmkzI-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    margin-top: 25px;
 }
 
-.container .content{
-    position: absolute;
+header{
+    position: relative;
     top: 0;
-    left: 0;
-    width: 58%;
-    height: 100%;
-    background:transparent ;
-    padding: 80px;
-    color: #e4e4e4;
+    width: 100%;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    align-items: center;
 }
 
-.container .logreg-box{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(100% - 58%);
-    height: 100%;
-    background: red;
-}
-
-.content .logo{
+header .logo{
+    position: relative;
+    color: white;
     font-size: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
-.text-sci h2{
-    font-size: 40px;
-    line-height: 1;
+header .navigation a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.45s;
+    transition-property: background;
 }
 
-.text-sci h2 span{
-    font-size: 25px;
+header .navigation a:not(:last-child){
+    margin-right: 30px; 
 }
-.text-sci p{
+
+header .navigation a:hover{
+    background: orange;
+}
+
+.content{
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.content .info h2{
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.content .info p{
     font-size: 16px;
-    margin: 20px 0;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: azure;
+    font-size: larger;
+}
+.content .info h2 span{
+    color: white;
+    font-size: 50px;
+    font-weight: 600px;
 }
 
-.social-icons a i{
-     font-size: 22px;
-     color: #e4e4e4;
-     margin-right:10px ;
-     transition: .5 ease;
+.content .info-btn{
+    color: aliceblue;
+    background: orange;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.45s;
+    transition-property: background;
 }
 
-.social-icons a:hover i{
-    transform: scale(1.2);
+.content .info-btn:hover{
+    background: rgb(124, 86, 16);
+}
+
+.media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icons a{
+    position: relative;
+    color: beige;
+    font-size: 50px; 
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+.media-icons a:hover{
+    transform: scale(1.5);
+}
+
+label{
+    display: none;
+}
+#check{
+    z-index: 3;
+    display: none;
+}
+@media(max-width: 960px){
+    header .navigation{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.45s;
+        transition-property: color;
+    }
+
+    label:hover{
+        color: orange;
+    }
+    label .close-btn{
+        display: none;
+    }
+
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background: rgba(26, 25, 25, 0.877);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #check:checked ~ header .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+    #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .meny-btn{
+        position: absolute;
+    }
+
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+    }
+
+    .content .info h2{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .content .info h2 span{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 560px){
+    .content .info h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .content .info h2 span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 14px;
+    }
 }
