@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Landing page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <div class="nav-bar">
-            <a href="" class="logo">Logo</a>
-                <div class="navigation">
-                    <div class="nav-items">
-                        <i class="uil uil-times nav-close-btn"></i>
-                        <a href="#"><i class="uil uil-home"></i>Home</a>
-                        <a href="#"><i class="uil uil-list-ul"></i>Form</a>
-                        <a href="#"><i class="uil uil-presentation-lines-alt"></i>Leader Board</a>
-                        <a href="#"><i class="uil uil-cloud-info"></i>About</a>
-                        <a href="#"><i class="uil uil-at"></i>Contact Us</a>
-                    </div>
-                </div>
-                <i class="uil uil-apps nav-menu-btn"></i>
-        </div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Leader Board</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
     </header>
 
-    <section class="home">
-        <div class="swiper bg-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="" />
-              </div>
-            </div>
-          </div>
+    <div class="container">
+        <div class="content">
+            <h2 class="logo"><i class='bx bx-low-vision' ></i>Webeye</h2>
 
-          <div thumbsSlider="" class="bg-slider-thumbs">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="" />
+            <div class="text-sci"><h2>
+                <br>Welcome!<br><span>To Our New Website.</span> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum.</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
                 </div>
             </div>
-          </div>
-    </section>
-    <script src="swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Sign In</h2>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
