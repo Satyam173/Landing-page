@@ -58,6 +58,9 @@ header .navigation a:not(:last-child){
 header .navigation a:hover{
     background: orange;
 }
+label{
+    margin: 0 -34px;
+}
 
 .content{
     max-width: 650px;
